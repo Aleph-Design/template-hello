@@ -1,0 +1,18 @@
+{{template "base" .}}
+{{- define "content"}}
+<div class="container">
+  <div class="row mt-5">
+    <div class="col">
+      <h1>STARTBRIDGE: the HOME page</h1>
+      <hr>
+      <p>Created on 20240610 15:44</p>
+      <p>Templates running from a template cache.</p>
+      <p>To see your IP address visit the <a href="/about">About</a> page.</p>
+      <p>This feature uses a cookie.</p>
+    </div>
+    {{block "table" .}}{{- end}}
+    {{block "box" .}}{{- end}}
+    {{block "msg" .}}{{- end}}
+  </div>
+</div>
+{{- end}}

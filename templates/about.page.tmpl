@@ -1,0 +1,20 @@
+{{template "base" .}}
+{{define "content"}}
+<div class="container">
+  <div class="row mt-5">
+    <div class="col">
+      <h1>STARTBRIDGE: the ABOUT page</h1>
+      <hr>
+      <p>Created on 20240610 15:44</p>
+      <p>Template running from a chached template with data: {{index .StringMap "test"}}</p>
+      <p>
+        {{if ne (index .StringMap "rem_key") ""}}
+          Your remote IP address is: {{index .StringMap "rem_key"}}
+        {{else}}
+          Your IP addres is unknown - Visit the <a href="/">Home page</a> to set it.
+        {{end}}
+      </p>
+    </div>
+  </div>
+</div>
+{{end}}
